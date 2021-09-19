@@ -1,10 +1,10 @@
-
 import argparse
 import mlflow
 from mlflow.tracking import MlflowClient
 from pprint import pprint
 import joblib
 import os
+import log_class
 
 os.chdir('C:\\Users\\bharg\\Desktop\\Ml_Flow_Task')
 from get_data import read_params
@@ -25,15 +25,15 @@ def log_production_model(config_path):
     
     
     runs = mlflow.search_runs(experiment_ids=1)
-    highest = runs["metrics.r2"].sort_values(ascending=False)[0]
-    highest_run_id = runs[runs["metrics.r2"] == highest]["run_id"][0]
+   
+    highest = max(runs["metrics.r2"])
     
-
+    highest_run_id = list(runs[runs["metrics.r2"] == highest]["run_id"])[0]
+    
     client = MlflowClient()
     for mv in client.search_model_versions(f"name='{model_name}'"):
         mv = dict(mv)
-        
-        if mv["run_id"] == highest_run_id:
+        if (mv["run_id"] == highest_run_id):
             current_version = mv["version"]
             logged_model = mv["source"]
             pprint(mv, indent=4)
