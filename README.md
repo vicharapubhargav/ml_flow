@@ -18,9 +18,9 @@
  
  cmd: git commit -m "First Commit" 
  
- cmd: git remote add origin https://github.com/vicharapubhargav/dvc_task1
+ cmd: git remote add origin https://github.com/vicharapubhargav/mlflow
  
- cmd: git push origin main
+ cmd: git push origin main-mlflow
 
 create an artifcats folder
  cmd : touch artifacts
