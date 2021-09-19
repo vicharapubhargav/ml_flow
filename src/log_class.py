@@ -1,6 +1,5 @@
 import logging
 
-
 def getLog(nm):
     # Creating custom logger
     logger = logging.getLogger(nm)
