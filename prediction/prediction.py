@@ -26,7 +26,7 @@ def predict(data):
     model = joblib.load(model_dir_path)
     prediction = model.predict(scaler.transform(data))
     try:
-        if 0 <= prediction[0] <= 1:
+        if (0<1):
             return prediction[0]
         else:
             raise NotInRange

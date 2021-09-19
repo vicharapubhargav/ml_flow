@@ -27,15 +27,15 @@ stages:
       size: 1259
     params:
       params.yaml:
-        split_data.random_state: 90
+        split_data.random_state: 95
         split_data.test_size: 0.2
     outs:
     - path: data/processed/test_Admission.csv
-      md5: ba65ae113572ed6067a60535507f9ed9
-      size: 14158
+      md5: a29b56e4953c9d7216a03a7000127ba7
+      size: 14147
     - path: data/processed/train_Admission.csv
-      md5: 6f9e0ece8a50943f02bf20df6856c6ed
-      size: 56365
+      md5: 30b351660f0b2cad9e1fb74a4657f175
+      size: 56376
   process_data:
     cmd: python src/EDA.py --config=params.yaml
     deps:
@@ -56,11 +56,11 @@ stages:
     cmd: python src/model_build.py --config=params.yaml
     deps:
     - path: data/processed/test_Admission.csv
-      md5: ba65ae113572ed6067a60535507f9ed9
-      size: 14158
+      md5: a29b56e4953c9d7216a03a7000127ba7
+      size: 14147
     - path: data/processed/train_Admission.csv
-      md5: 6f9e0ece8a50943f02bf20df6856c6ed
-      size: 56365
+      md5: 30b351660f0b2cad9e1fb74a4657f175
+      size: 56376
     - path: src/get_data.py
       md5: 9832b765bd62358452a653f683a0c0f6
       size: 866
@@ -70,10 +70,10 @@ stages:
     params:
       params.yaml:
         estimators.ElasticNet.params.cv: 100
-        estimators.ElasticNet.params.normalize: true
+        estimators.ElasticNet.params.normalize: false
   log_production_model:
     cmd: python src/log_production_model.py --config=params.yaml
     deps:
     - path: src/log_production_model.py
-      md5: 7bf6866484333fa8ec1e527b6ff5bc40
-      size: 1875
+      md5: 95b446e118d83f9c348ec24d6e9cdd11
+      size: 1871
