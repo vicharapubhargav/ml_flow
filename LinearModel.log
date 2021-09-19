@@ -66,3 +66,19 @@
 2021-09-18 23:50:08,495:INFO:get_data.py:Requested Params.yaml file is returned
 2021-09-18 23:50:09,112:INFO:model_build.py:Linear Regression Model has been build using ElasticNet
 2021-09-18 23:50:09,117:INFO:model_build.py:Build Model has saved to saved_models directory as model.joblib
+2021-09-19 13:30:45,695:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:30:45,698:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:30:45,711:INFO:get_data.py:Requested DataSet file is returned
+2021-09-19 13:30:45,718:INFO:load_data.py:Given Dataset File file is saved in data/raw folders without spaces in headers
+2021-09-19 13:30:47,779:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:30:47,805:INFO:EDA.py:Missing column values in data set are handled
+2021-09-19 13:30:47,808:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:30:47,812:INFO:EDA.py:Independent features of the dataset has been normalized
+2021-09-19 13:30:47,813:INFO:EDA.py:Scaler objected has been dumped to scaler.pkl pickle file
+2021-09-19 13:30:49,776:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:30:49,793:INFO:split_data.py:Data set has been splitted into train and test data
+2021-09-19 13:30:52,439:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:44:38,980:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:48:44,908:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 13:48:44,931:INFO:split_data.py:Data set has been splitted into train and test data
+2021-09-19 13:48:50,073:INFO:get_data.py:Requested Params.yaml file is returned
