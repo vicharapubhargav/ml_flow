@@ -82,3 +82,4 @@
 2021-09-19 13:48:44,908:INFO:get_data.py:Requested Params.yaml file is returned
 2021-09-19 13:48:44,931:INFO:split_data.py:Data set has been splitted into train and test data
 2021-09-19 13:48:50,073:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 18:08:36,574:INFO:get_data.py:Requested Params.yaml file is returned

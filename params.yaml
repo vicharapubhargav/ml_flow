@@ -14,14 +14,14 @@ process_data:
 split_data:
   train_path: data/processed/train_Admission.csv
   test_path: data/processed/test_Admission.csv
-  test_size: 0.15
+  test_size: 0.20
   random_state: 90
 
 
 estimators:
   ElasticNet:
     params:
-      cv: 50
+      cv: 100
       normalize: true
 
 model_dir: saved_models
