@@ -155,3 +155,11 @@
 2021-09-19 22:45:27,037:INFO:get_data.py:Requested Params.yaml file is returned
 2021-09-19 22:45:52,712:INFO:get_data.py:Requested Params.yaml file is returned
 2021-09-19 22:46:45,643:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 22:48:45,268:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 22:49:31,841:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 22:49:31,916:INFO:split_data.py:Data set has been splitted into train and test data
+2021-09-19 22:49:38,005:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 22:49:51,128:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 22:51:08,232:INFO:get_data.py:Requested Params.yaml file is returned
+2021-09-19 22:51:08,246:INFO:split_data.py:Data set has been splitted into train and test data
+2021-09-19 22:51:13,872:INFO:get_data.py:Requested Params.yaml file is returned
