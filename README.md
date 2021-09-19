@@ -25,7 +25,7 @@
 create an artifcats folder
  cmd : touch artifacts
 
-mlflow server command -
+# mlflow server command -
 
 mlflow server
 --backend-store-uri sqlite:///mlflow.db
